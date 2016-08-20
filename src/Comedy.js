@@ -13,7 +13,7 @@ class Comedy extends Component {
         </div>
         <div className='Content'>
           <div className='Movie'>
-            <img src= {this.props.Poster} />
+            <img src={this.props.Poster} alt='Move Title'/>
           </div>
           <h3>{this.props.Title}</h3>
           <p>{this.props.Year}, {this.props.Rated}</p>
