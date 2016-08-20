@@ -26,18 +26,18 @@ li a {
   text-transform: uppercase;
 }
 
-.content {
+.Content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.movie {
+.Movie {
   border: 3px solid #0d0d0d;
   margin: 20px;
 }
 
-.movie img {
+.Movie img {
   width: 200px;
 }
 
@@ -59,7 +59,7 @@ h1 {
   padding-top: 20px;
 }
 
-.genre {
+.Genre {
   background-color: #e7e7e7;
   border-bottom: 5px solid #00b5b8;
 }
