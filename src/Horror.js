@@ -15,7 +15,7 @@ class Horror extends Component {
   }
 
   componentDidMount () {
-      fetch(`http://www.omdbapi.com/?t=Child%27s+Play&y=&plot=short&r=json`)
+      fetch(`http://www.omdbapi.com/?t=${this.props.movieTitle}&y=&plot=short&r=json`)
         .then((resp) => resp.json())
         .then((data) => {
           this.setState({
@@ -27,10 +27,10 @@ class Horror extends Component {
             Awards: data.Awards
           })
         })
-    }
+  }
 
   // get //http://www.omdbapi.com/?t={movieName}&plot=short&r=// json
-  // if "Genre" = "Comedy" or contains "Comedy"
+  // if 'Genre' = 'Comedy' or contains 'Comedy'
   // CreateElement Div
 
   render () {

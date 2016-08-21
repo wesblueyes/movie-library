@@ -1,9 +1,35 @@
 import React, { Component } from 'react'
 
 class Action extends Component {
+  constructor () {
+    super()
+    this.state = {
+      Poster: '',
+      Title: '',
+      Year: '',
+      Rated: '',
+      Plot: '',
+      Awards: ''
+    }
+  }
+
+  componentDidMount () {
+      fetch(`http://www.omdbapi.com/?t=${this.props.movieTitle}&y=&plot=short&r=json`)
+        .then((resp) => resp.json())
+        .then((data) => {
+          this.setState({
+            Poster: data.Poster,
+            Title: data.Title,
+            Year: data.Year,
+            Rated: data.Rated,
+            Plot: data.Plot,
+            Awards: data.Awards
+          })
+        })
+    }
 
   // get //http://www.omdbapi.com/?t={movieName}&plot=short&r=// json
-  // if "Genre" = "Comedy" or contains "Comedy"
+  // if 'Genre' = 'Comedy' or contains 'Comedy'
   // CreateElement Div
 
   render () {
@@ -13,12 +39,12 @@ class Action extends Component {
         </div>
         <div className='Content'>
           <div className='Movie'>
-            <img src={this.props.Poster} alt='Move Title'/>
+            <img src={this.state.Poster} alt='Move Title'/>
           </div>
-          <h3>{this.props.Title}</h3>
-          <p>{this.props.Year}, {this.props.Rated}</p>
-          <p>{this.props.Plot}</p>
-          <p>{this.props.Awards}</p>
+          <h3>{this.state.Title}</h3>
+          <p>{this.state.Year}, {this.state.Rated}</p>
+          <p>{this.state.Plot}</p>
+          <p>{this.state.Awards}</p>
         </div>
       </div>
     )
