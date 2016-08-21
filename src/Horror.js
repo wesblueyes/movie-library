@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.css'
 
 class Horror extends Component {
   constructor () {
@@ -40,7 +41,7 @@ class Horror extends Component {
         <div className='Content'>
           <div className='Movie'>
             <img src={this.state.Poster} alt='Move Title'/>
-          </div>
+            </div>
           <h3>{this.state.Title}</h3>
           <p>{this.state.Year}, {this.state.Rated}</p>
           <p>{this.state.Plot}</p>
