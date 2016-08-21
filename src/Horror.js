@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Review from './Review'
 
 class Horror extends Component {
   constructor () {
@@ -29,10 +30,11 @@ class Horror extends Component {
     }
 
   // get //http://www.omdbapi.com/?t={movieName}&plot=short&r=// json
-  // if "Genre" = "Comedy" or contains "Comedy"
+  // if 'Genre' = 'Comedy' or contains 'Comedy'
   // CreateElement Div
 
   render () {
+    const array = [{ rating:'3 stars', reviewer: 'Orlando Sentinel'}, {rating:'4 stars', reviewer: 'Washington Post'}, {rating: "it\'s okay i guess"}]
     return (
       <div className='Horror'>
         <div className='Genre'><a name='horror'><h2>Horror</h2></a>
@@ -46,6 +48,7 @@ class Horror extends Component {
           <p>{this.state.Plot}</p>
           <p>{this.state.Awards}</p>
         </div>
+        <Review reviews={array} />
       </div>
     )
   }
