@@ -1,7 +1,6 @@
 {
   "name": "movie-library",
   "version": "0.0.1",
-  "homepage": "nellarro.wesblueeyes.movielibrary.surge.sh",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.2.1"
