@@ -26,12 +26,6 @@ li a {
   text-transform: uppercase;
 }
 
-.Horror {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .Content {
   display: flex;
   flex-direction: column;
