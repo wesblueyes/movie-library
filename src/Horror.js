@@ -14,7 +14,7 @@ class Horror extends Component {
   }
 
   componentDidMount () {
-      fetch(`http://www.omdbapi.com/?t=Sweeney+Todd&y=2007&plot=short&r=json`)
+      fetch(`http://www.omdbapi.com/?t=Child%27s+Play&y=&plot=short&r=json`)
         .then((resp) => resp.json())
         .then((data) => {
           this.setState({
