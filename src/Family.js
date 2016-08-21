@@ -31,16 +31,14 @@ class Family extends Component {
   render () {
     return (
       <div className='Family'>
-        <div className='Genre'><a name='family'><h2>Family</h2></a>
-        </div>
         <div className='Content'>
           <div className='Movie'>
             <img src={this.state.Poster} alt='Move Title'/>
           </div>
           <h3>{this.state.Title}</h3>
-          <p>{this.state.Year}, {this.state.Rated}</p>
+          <p className='meta'>{this.state.Year}, {this.state.Rated}</p>
           <p>{this.state.Plot}</p>
-          <p>{this.state.Awards}</p>
+          <p className='meta'>{this.state.Awards}</p>
         </div>
       </div>
     )

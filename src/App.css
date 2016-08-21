@@ -12,6 +12,7 @@ ul {
   padding-left: 0px;
   background-color: #ffa500;
   margin: 0px;
+  flex-wrap: wrap;
 }
 
 li {
@@ -62,9 +63,21 @@ h1 {
 
 h3 {
   margin: 0px;
+  color: #00b5b8;
 }
 
 .Genre {
   background-color: #e7e7e7;
   border-bottom: 5px solid #00b5b8;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+p.meta {
+  color: #00b5b8;
+  font-style: italic;
 }
