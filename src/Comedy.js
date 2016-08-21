@@ -7,9 +7,7 @@ class Comedy extends Component {
   // CreateElement Div
 
   render () {
-    return (
-      fetch()
-    )
+    <ComedyPoster />
   }
 }
 
