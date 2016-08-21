@@ -25,6 +25,11 @@ li a {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
+  padding: 20px;
+}
+
+li a:hover {
+  background-color: #00b5b8;
 }
 
 .Content {
@@ -58,7 +63,7 @@ h1 {
   color: #fff;
   text-align: center;
   margin: 0px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 h3 {
@@ -80,4 +85,20 @@ h3 {
 p.meta {
   color: #00b5b8;
   font-style: italic;
+}
+
+.top-nav {
+  background-color: #ffa500;
+}
+
+.top-nav {
+  background-color: #ffa500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.fixed {
+  width: 100%;
 }
